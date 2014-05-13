@@ -1,0 +1,39 @@
+{
+  "name": "vagrant",
+  "chef_type": "environment",
+  "json_class": "Chef::Environment",
+  "default_attributes": {
+    "nginx": {
+      "cert_items": [],
+      "ssl_only": false,
+      "listen": 80,
+      "upstream": {
+        "name": "nodeapp",
+        "servers": [
+          {
+            "address": "127.0.0.1:8888",
+            "max_fails": 0,
+            "fail_timeout": 0,
+            "weight": 1,
+            "down": false
+          }
+        ]
+      }
+    },
+    "nodejs": {
+      "version": "0.10.26",
+      "checksum": "ef5e4ea6f2689ed7f781355012b942a2347e0299da0804a58de8e6281c4b1daa",
+      "checksum_linux_x64": "305bf2983c65edea6dd2c9f3669b956251af03523d31cf0a0471504fd5920aac",
+      "checksum_linux_x86": "8fa2d952556c8b5aa37c077e2735c972c522510facaa4df76d4244be88f4dc0f",
+      "npm": "1.4.7"
+    },
+    "nodejs-forever": {
+      "identifier": "nodeapp",
+      "description": "nodeapp",
+      "start-script": "/vagrant/server.js",
+      "user": "root",
+      "log-file-path": "/var/log/node/server.log",
+      "start-service": true
+    }
+  }
+}
