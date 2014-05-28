@@ -6,3 +6,5 @@ cookbook 'nginx-reverseproxy',
 cookbook 'logrotate'
 cookbook 'pmo_logrotate',
   :git => 'http://github.com/jameswomack/logrotate'
+cookbook 'pmo_upstart',
+  :git => 'http://github.com/jameswomack/upstart'
