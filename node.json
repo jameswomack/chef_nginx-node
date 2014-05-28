@@ -1,10 +1,8 @@
 {
   "name": "nodeapp",
   "run_list": [
-    "recipe[mongodb]",
     "recipe[nodejs]",
     "recipe[nginx-reverseproxy]",
-    "recipe[nodejs-forever::install_forever]",
-    "recipe[nodejs-forever::upstart]"
+    "recipe[pmo_logrotate]"
   ]
 }

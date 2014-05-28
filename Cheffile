@@ -1,8 +1,8 @@
 site 'http://community.opscode.com/api/v1'
 cookbook 'nginx'
 cookbook 'nodejs'
-cookbook 'mongodb'
 cookbook 'nginx-reverseproxy',
   :git => 'https://github.com/sakai135/cookbook-nginx-reverseproxy'
-cookbook 'nodejs-forever',
-  :git => 'https://github.com/sakai135/cookbook-nodejs-forever'
+cookbook 'logrotate'
+cookbook 'pmo_logrotate',
+  :git => 'http://ghe.am.sony.com/James-Womack/pmo_logrotate'
