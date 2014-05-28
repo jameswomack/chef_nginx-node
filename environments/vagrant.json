@@ -11,7 +11,7 @@
         "name": "nodeapp",
         "servers": [
           {
-            "address": "127.0.0.1:8888",
+            "address": "127.0.0.1:3001",
             "max_fails": 0,
             "fail_timeout": 0,
             "weight": 1,

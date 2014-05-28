@@ -5,4 +5,4 @@ cookbook 'nginx-reverseproxy',
   :git => 'https://github.com/sakai135/cookbook-nginx-reverseproxy'
 cookbook 'logrotate'
 cookbook 'pmo_logrotate',
-  :git => 'http://ghe.am.sony.com/James-Womack/pmo_logrotate'
+  :git => 'http://github.com/jameswomack/logrotate'
